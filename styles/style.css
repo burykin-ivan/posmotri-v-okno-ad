@@ -268,3 +268,47 @@ ol {
   background-color: #fff;
   opacity: 0;
 }
+
+/* Общий класс для всех кнопок (.button) */
+.button {
+  border: 1px solid #fff;
+  background-color: transparent;
+  color: #fff;
+  font-family: inherit;
+  font-size: 14px;      
+  font-weight: 700;
+  text-transform: uppercase; 
+  cursor: pointer;      
+}
+
+/* Индивидуальные стили для кнопки "Найти" */
+.search-form__submit-button {
+  align-self: flex-end;
+  padding: 10px 40px;  
+}
+
+/* Индивидуальные стили для кнопки "Показать ещё" */
+.more-button {
+  width: 100%;          
+  padding: 12px 0;      
+}
+
+/* Состояние при наведении курсора (:hover) */
+.button:hover {
+  text-decoration: underline;
+}
+
+/* Активное состояние, при нажатии (:active) */
+.button:active {
+  background-color: #545050;
+}
+
+/* Состояния фокуса */
+.button:focus {
+  outline: none;
+}
+
+.button:focus-visible {
+  outline: 2px solid #fff; 
+  outline-offset: 2px; 
+}
