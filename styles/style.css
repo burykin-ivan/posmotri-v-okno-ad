@@ -91,3 +91,55 @@ ol {
   flex-direction: column;
   gap: 20px;
 }
+
+/* Задаем размеры контейнеру для видео и отступ снизу */
+.result__video-container {
+  width: 100%;
+  max-width: 720px;
+  margin-bottom: 20px; 
+  position: relative;
+}
+
+/* Видео занимает всю ширину и высоту, не выходя за пределы */
+.result__video-container video {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+}
+
+/* Создаем отступы между карточками в списке */
+.content__list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; 
+}
+
+/* Отступ между кнопкой "Показать ещё" и последней карточкой */
+.content__list-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; 
+}
+
+/* Располагаем элементы карточки в одну строку и прижимаем к верху */
+.content__video-card {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 10px; /* Отступ между картинкой и текстом */
+}
+
+/* Размеры для превью карточки (картинки) */
+.content__video-card-thumbnail {
+  width: 120px; 
+  min-width: 120px;
+  height: 80px; 
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Описание занимает всё оставшееся место */
+.content__video-card-description-container {
+  flex-grow: 1;
+}
