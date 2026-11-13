@@ -345,3 +345,16 @@ ol {
   outline: 2px solid #fff;
   outline-offset: 2px;
 }
+
+/* Устанавливаем курсор-указатель для всех интерактивных элементов */
+.button,
+.search-form__label,
+.content__card-link {
+  cursor: pointer;
+}
+
+/* Делаем контейнеры относительными, чтобы прелоадеры вставали ровно в них */
+.result__video-container,
+.content__list-container {
+  position: relative;
+}
