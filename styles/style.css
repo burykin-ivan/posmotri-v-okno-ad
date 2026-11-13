@@ -312,3 +312,36 @@ ol {
   outline: 2px solid #fff; 
   outline-offset: 2px; 
 }
+
+/* Стилизация ссылки карточки (делаем блочной) */
+.content__card-link {
+  display: block;
+  padding: 3px; 
+  margin-bottom: 10px;
+}
+
+/* Текущая карточка (управляется JS) */
+.content__card-link_current {
+  background-color: #545050;
+}
+
+/* Активная карточка (при зажатой кнопке мыши) */
+.content__card-link:active {
+  background-color: #444;
+}
+
+/* Карточка при наведении (подчеркиваем текст) */
+.content__card-link:hover .content__video-card-title,
+.content__card-link:hover .content__video-card-description {
+  text-decoration: underline;
+}
+
+/* Карточка в фокусе (для доступности с клавиатуры) */
+.content__card-link:focus {
+  outline: none; 
+}
+
+.content__card-link:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 2px;
+}
